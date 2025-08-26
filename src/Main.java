@@ -10,6 +10,7 @@ public class Main {
 
         //Declaring variables.
         int timesRolled;
+        int total = 0;
 
         //Main functioning code.
         System.out.print("Enter the number of dice to roll: ");
@@ -34,6 +35,7 @@ public class Main {
                     System.out.println("|  ●  |");
                     System.out.println("|     |");
                     System.out.println("-------");
+                    total += 1;
                 }
                 case 2 -> {
                     System.out.println("-------");
@@ -41,6 +43,7 @@ public class Main {
                     System.out.println("|     |");
                     System.out.println("| ●   |");
                     System.out.println("-------");
+                    total += 2;
                 }
                 case 3 -> {
                     System.out.println("-------");
@@ -48,6 +51,7 @@ public class Main {
                     System.out.println("|  ●  |");
                     System.out.println("|    ●|");
                     System.out.println("-------");
+                    total += 3;
                 }
                 case 4 -> {
                     System.out.println("-------");
@@ -55,6 +59,7 @@ public class Main {
                     System.out.println("|     |");
                     System.out.println("|●   ●|");
                     System.out.println("-------");
+                    total += 4;
                 }
                 case 5 -> {
                     System.out.println("-------");
@@ -62,6 +67,7 @@ public class Main {
                     System.out.println("|  ●  |");
                     System.out.println("|●   ●|");
                     System.out.println("-------");
+                    total += 5;
                 }
                 case 6 -> {
                     System.out.println("-------");
@@ -69,11 +75,13 @@ public class Main {
                     System.out.println("|●   ●|");
                     System.out.println("|●   ●|");
                     System.out.println("-------");
+                    total += 6;
                 }
                 default -> System.out.println("error");
             }
         }
-        
+
+        System.out.println("\nThe total is " + total);
         
         scanner.close();
     }
